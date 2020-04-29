@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<h3>Supercar Facts</h3>
+<html>
+    <head>
+     <title>facts</title>
+    </head>
+    <body>
+        {% for fact in facts %}
+            {{fact.fact_name}}
+            {{fact.supercar_name}}
+            {{fact.displacement}}
+            {{fact.cylinders}}
+            {{fact.acceleration_time}}
+            {{fact.bhp}}
+            {{fact.top_speed}}
+            {{fact.description}}
+        {% endfor %}
+    </body>
+</html>
