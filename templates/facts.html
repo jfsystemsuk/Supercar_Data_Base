@@ -1,20 +1,40 @@
 <!DOCTYPE html>
-
+{% extends 'base.html' %} {% block content %} {{fact.fact_name}} {{fact.supercar_name}} {{fact.displacement}}  {{fact.cylinders}} {{fact.acceleration_time}} {{fact.bhp}}
+{{fact.top_speed}} {{fact.description}} 
 <h3>Supercar Facts</h3>
-<html>
-    <head>
-     <title>facts</title>
-    </head>
-    <body>
+<div class="row">
+    <ul class="collapsible" data-collapsible="accordion">
         {% for fact in facts %}
-            {{fact.fact_name}}
-            {{fact.supercar_name}}
-            {{fact.displacement}}
-            {{fact.cylinders}}
-            {{fact.acceleration_time}}
-            {{fact.bhp}}
-            {{fact.top_speed}}
-            {{fact.description}}
+        <li>
+            <div class="collapsible-header">
+                <div class="col s3">
+                    <i class="material-icons">expand_more</i>
+                    <a href="{{url_for('delete_fact', fact_id=fact._id)}}" class="waves-effect waves-light btn btn_small">Done</a>
+                    <a href="{{url_for('edit_fact', fact_id=fact._id)}}" class="waves-effect waves-light btn btn_small blue">Edit</a>
+                    
+                </div>
+                <div class="fact_header col s9">
+                    <strong>{{fact.fact_name}}</strong> 
+                </div>
+            </div>
+            <div class="collapsible-body">
+                <span>
+                {{fact.description}} 
+            </span>
+            </div>
+        </li>
         {% endfor %}
-    </body>
-</html>
+    </ul>
+</div>
+{% endblock %}
+    
+
+            
+            
+            
+           
+            
+           
+            
+            
+        
