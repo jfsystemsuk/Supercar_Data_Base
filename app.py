@@ -19,7 +19,18 @@ def get_facts():
 @app.route('/add_fact')
 def add_fact():
     return render_template('addfact.html', supercars=mongo.db.supercars.find())   # noqa
-        
+
+
+@app.route('/get_supercars')
+def get_supercars():
+    return render_template('supercars.html', supercars=mongo.db.supercars.find()) 
+       
+
+ @app.route('/add_supercar')
+def add_category():
+    return render_template('addsupercar.html')       
+
+
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),

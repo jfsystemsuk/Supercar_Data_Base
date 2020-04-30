@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% extends 'base.html' %} {% block content %}
+
+<div class="row">
+
+    <h3>Supercars</h3>
+    <ul class="collapsible" data-collapsible="accordion">
+        {% for supercar in supercars %}
+        <li>
+            <div class="collapsible-header">
+                <a href="{{url_for('delete_supercar', supercar_id=supercar._id)}}" class="waves-effect waves-light btn btn_small">Del</a>
+                <a href="{{url_for('edit_supercar', supercar_id=supercar._id)}}" class="waves-effect waves-light btn btn_small blue">Edit</a>
+
+                <div class="task_header">
+                    <strong>{{supercar.supercar_name}}</strong>
+                </div>
+            </div>
+        </li>
+        {% endfor %}
+
+    </ul>
+</div>
+<div class="row">
+    <a href="{{url_for('add_supercar')}}" class="waves-effect waves-light btn">
+        <i class="material-icons right">playlist_add</i>Add Supercar
+    </a>
+</div>
+{% endblock %}
