@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 {% extends 'base.html' %} {% block content %} 
- 
+
+            
+
+            
 <h3>Supercar Facts</h3>
 <div class="row">
     <ul class="collapsible" data-collapsible="accordion">
@@ -14,23 +17,32 @@
                     
                 </div>
                 <div class="fact_header col s9">
-                    <strong>{{fact.fact_name}}</strong> 
+                    <strong>{{fact.supercar_name}}</strong> 
                 </div>
             </div>
             <div class="collapsible-body">
+                <ul>
+                <li><strong>Displacement</strong>  {{fact.displacement}}</li>
+                <li><strong>Cylinders</strong>  {{fact.cylinders}}</li>
+                <li><strong>Acceleratime Time</strong>  {{fact.acceleration_time}}</li>
+                <li><strong>BHP</strong>  {{fact.bhp}}</li>
+                <li><strong>Top Speed</strong>  {{fact.top_speed}}</li>
+                </ul>
                 <span>
-                {{fact.description}} 
-            </span>
+                <strong>Description</strong>  {{fact.description}}
+                </span>
+                
+                
+                
             </div>
         </li>
         {% endfor %}
+        
     </ul>
 </div>
 {% endblock %}
     
 
-            
-            
             
            
             

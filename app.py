@@ -9,7 +9,6 @@ app.config["MONGO_URI"] = 'mongodb+srv://root:r00tUser@cluster0-y0jyu.mongodb.ne
 
 mongo = PyMongo(app)
 
-
 @app.route('/')
 @app.route('/get_facts')
 def get_facts():
@@ -20,12 +19,12 @@ def get_facts():
 @app.route('/add_fact')
 def add_fact():
     return render_template('addfact.html',
-        supercars=mongo.db.supercars.find())   # noqa
+                           supercars=mongo.db.supercars.find())   # noqa
 
 
 @app.route('/insert_fact', methods=['POST'])
 def insert_fact():
-    facts = mongo.db.fact
+    facts = mongo.db.facts
     facts.insert_one(request.form.to_dict())
     return redirect(url_for('get_facts'))
 
@@ -40,10 +39,9 @@ def edit_fact(fact_id):
 
 @app.route('/update_fact/<fact_id>', methods=["POST"])
 def update_fact(fact_id):
-    facts = mongo.db.fact
+    facts = mongo.db.facts
     facts.update({'_id': ObjectId(fact_id)},
     {
-        'fact_name': request.form.get('fact_name'),
         'supercar_name': request.form.get('supercar_name'),
         'displacement': request.form.get('displacement'),
         'cylinders': request.form.get('cylinders'),
@@ -98,7 +96,6 @@ def insert_supercar():
     supercar_doc = {'supercar_name': request.form.get('supercar_name')}
     mongo.db.supercars.insert_one(supercar_doc)
     return redirect(url_for('get_supercars'))
-
 
 
 if __name__ == '__main__':
