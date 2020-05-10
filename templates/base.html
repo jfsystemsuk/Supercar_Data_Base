@@ -2,6 +2,9 @@
 <html>
 <h3></h3>
      <head>
+
+     <!--Meta Data-->  <!--Links to Materialize ,Google Fonts and the sytle.css-->
+
         <title>Supercar_Data_Base</title>
               <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
               <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
@@ -10,18 +13,26 @@
 
 
 
-<body>
+<body> 
+    
     <header>
-        <nav>
-            <div class="nav-wrapper">
-                <a href="{{url_for('get_facts')}}" class="brand-logo">Super Car</a>
+
+        <!--Nav Bar-->
+        <nav class="#40c4ff light-blue accent-2">
+           <div class="nav-wrapper">
+
+                <!--Logo-->
+                <a href="{{url_for('get_facts')}}" class="brand-logo center"><img class="img-responsive" src="static/logos/400dpiLogoCropped.png" alt="logo" width="260" height="60"></a>
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+                <!--Nav Bar buttons for a browser-->
                     <li><a href="{{url_for('get_facts')}}">Supercar Facts</a></li>
                     <li><a href="{{url_for('add_fact')}}">New Fact</a></li>
                     <li><a href="{{url_for('get_supercars')}}">Manage Supercars</a></li>
                     
                 </ul>
+                <!--Nav Bar buttons for mobile use-->
                 <ul class="side-nav" id="mobile-demo">
                     <li><a href="{{url_for('get_facts')}}">Supercar Facts</a></li>
                     <li><a href="{{url_for('add_fact')}}">New Fact</a></li>
@@ -31,12 +42,14 @@
             </div>
         </nav>
     </header>
-
+    
 
     <div class="container">
+    
      {% block content %} {% endblock %}
     </div>
     
+    <!--Javascript-->  <!--On Ready State-->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>

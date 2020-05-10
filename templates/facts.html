@@ -9,28 +9,45 @@
     <ul class="collapsible" data-collapsible="accordion">
         {% for fact in facts %}
         <li>
+
+        <!--Done and Edit buttons-->
             <div class="collapsible-header">
                 <div class="col s3">
                     <i class="material-icons">expand_more</i>
-                    <a href="{{url_for('delete_fact', fact_id=fact._id)}}" class="waves-effect waves-light btn btn_small">Done</a>
-                    <a href="{{url_for('edit_fact', fact_id=fact._id)}}" class="waves-effect waves-light btn btn_small blue">Edit</a>
+                    <a href="{{url_for('delete_fact', fact_id=fact._id)}}" class="waves-effect waves-light btn btn_small #1de9b6 teal accent-3">Done</a>
+                    <a href="{{url_for('edit_fact', fact_id=fact._id)}}" class="waves-effect waves-light btn btn_small #40c4ff light-blue accent-2">Edit</a>
                     
                 </div>
                 <div class="fact_header col s9">
                     <strong>{{fact.supercar_name}}</strong> 
                 </div>
             </div>
+
+            <!--Listed facts-->
             <div class="collapsible-body">
                 <ul>
-                <li><strong>Displacement</strong>  {{fact.displacement}}</li>
+                <li><strong>Displacement in litres</strong>  {{fact.displacement}}</li>
                 <li><strong>Cylinders</strong>  {{fact.cylinders}}</li>
-                <li><strong>Acceleratime Time</strong>  {{fact.acceleration_time}}</li>
-                <li><strong>BHP</strong>  {{fact.bhp}}</li>
-                <li><strong>Top Speed</strong>  {{fact.top_speed}}</li>
+                <li><strong>Aspiration</strong>  {{fact.aspiration}}</li>
+                <li><strong>Engine Position</strong>  {{fact.engine_position}}</li>
+                <li><strong>Acceleratime Time in seconds</strong>  {{fact.acceleration_time}}</li>
+                <li><strong>Brake Horse Power</strong>  {{fact.bhp}}</li>
+                <li><strong>Engine Torque lbs/ft</strong>  {{fact.engine_torque}}</li>
+                <li><strong>Number of Valves</strong>  {{fact.valves}}</li>
+                <li><strong>Top Speed in mph</strong>  {{fact.top_speed}}</li>
+                <li><strong>Gearbox</strong>  {{fact.gearbox}}</li>
+                <li><strong>Driven Wheels</strong>  {{fact.driven_wheels}}</li>
+                <li><strong>Body Style</strong>  {{fact.body_style}}</li>
+                <li><strong>Fuel type</strong>  {{fact.fuel_type}}</li>
+                <li><strong>Number of Doors</strong>  {{fact.doors}}</li>
+                <li><strong>Min Kerb Weight in kg</strong>  {{fact.weight}}</li>
+                <li><strong>Miles Per Gallon</strong>  {{fact.mpg}}</li>
+                <li><strong>Cost New From</strong>  {{fact.cost_new}}</li>
+                <li><strong>Cost Used From</strong>  {{fact.cost_used}}</li>
                 </ul>
-                <span>
+                
                 <strong>Description</strong>  {{fact.description}}
-                </span>
+                
                 
                 
                 

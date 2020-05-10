@@ -13,27 +13,45 @@
                   <option value="{{car.supercar_name}}">{{car.supercar_name}}</option>
               {% endfor %} 
                 </select>
-                <label>Supercar Fact</label>
+                <label></label>
                 </div>
             </div>
+        </div>    
+
+                           <!--Add Fact-->
+        <div class="row">
             <div class="input-field col s12">
                 <i class="material-icons prefix">subject</i>
                 <textarea name="displacement" id="displacement" class="materialize-textarea"></textarea>
-                <label for="icon_prefix">displacement</label>
+                <label for="icon_prefix">displacement in litres</label>
             </div>
         </div>
         <div class="row">
             <div class="input-field col s12">
                 <i class="material-icons prefix">subject</i>
                 <textarea name="cylinders" id="cylinders" class="materialize-textarea"></textarea>
-                <label for="icon_prefix">clylinders</label>
+                <label for="icon_prefix">cylinders</label>
             </div>
-        </div>
+        </div>  
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="material-icons prefix">subject</i>
+                <textarea name="aspiration" id="aspiration" class="materialize-textarea"></textarea>
+                <label for="icon_prefix">aspiration</label>
+            </div>
+        </div>         
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="material-icons prefix">subject</i>
+                <textarea name="engine_position" id="engine_position" class="materialize-textarea"></textarea>
+                <label for="icon_prefix">engine position</label>
+            </div>
+        </div>    
         <div class="row">
             <div class="input-field col s12">
                 <i class="material-icons prefix">subject</i>
                 <textarea name="acceleration_time" id="acceleration_time" class="materialize-textarea"></textarea>
-                <label for="icon_prefix">acceleration time</label>
+                <label for="icon_prefix">acceleration time in seconds</label>
             </div>
         </div>
         <div class="row">
@@ -44,21 +62,100 @@
             </div>
         </div>
         <div class="row">
+            <div class="input-field col s12">
+                <i class="material-icons prefix">subject</i>
+                <textarea name="engine_torque" id="engine_torque" class="materialize-textarea"></textarea>
+                <label for="icon_prefix">engine torque lbs/ft</label>
+            </div>
+        </div>    
+        <div class="row">    
+            <div class="input-field col s12">
+                <i class="material-icons prefix">subject</i>
+                <textarea name="valves" id="valves" class="materialize-textarea"></textarea>
+                <label for="icon_prefix">valves</label>
+            </div>
+        </div>    
+        <div class="row">
            <div class="input-field col s12">
                 <i class="material-icons prefix">subject</i>
                 <textarea name="top_speed" id="top_speed" class="materialize-textarea"></textarea>
-                <label for="icon_prefix">top speed</label>
+                <label for="icon_prefix">top speed in mph</label>
             </div>
         </div>
         <div class="row">
             <div class="input-field col s12">
                 <i class="material-icons prefix">subject</i>
-                <textarea name="discription" id="discription" class="materialize-textarea"></textarea>
-                <label for="icon_prefix">description</label>
+                <textarea name="gearbox" id="gearbox" class="materialize-textarea"></textarea>
+                <label for="icon_prefix">gearbox</label>
+            </div>
+        </div>    
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="material-icons prefix">subject</i>
+                <textarea name="driven_wheels" id="driven_wheels" class="materialize-textarea"></textarea>
+                <label for="icon_prefix">driven wheels</label>
+            </div>
+        </div>    
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="material-icons prefix">subject</i>
+                <textarea name="body_style" id="body_style" class="materialize-textarea"></textarea>
+                <label for="icon_prefix">body_style</label>
             </div>
         </div>
         <div class="row">
-            <button class="btn waves-effect waves-light" type="submit" name="action">Add Fact
+            <div class="input-field col s12">
+                <i class="material-icons prefix">subject</i>
+                <textarea name="fuel_type" id="fuel_type" class="materialize-textarea"></textarea>
+                <label for="icon_prefix">fuel type</label>
+            </div>
+        </div>    
+        <div class="row">    
+             <div class="input-field col s12">
+                <i class="material-icons prefix">subject</i>
+                <textarea name="doors" id="doors" class="materialize-textarea"></textarea>
+                <label for="icon_prefix">number of doors</label>
+            </div>
+        </div>    
+        <div class="row">    
+             <div class="input-field col s12">
+                <i class="material-icons prefix">subject</i>
+                <textarea name="weight" id="weight" class="materialize-textarea"></textarea>
+                <label for="icon_prefix">min kerb weight in kg</label>
+            </div>
+        </div> 
+        <div class="row">    
+             <div class="input-field col s12">
+                <i class="material-icons prefix">subject</i>
+                <textarea name="mpg" id="mpg" class="materialize-textarea"></textarea>
+                <label for="icon_prefix">miles per gallon</label>
+            </div>
+        </div>       
+        <div class="row">    
+             <div class="input-field col s12">
+                <i class="material-icons prefix">subject</i>
+                <textarea name="cost_new" id="cost_new" class="materialize-textarea"></textarea>
+                <label for="icon_prefix">cost new from</label>
+            </div>
+        </div>    
+        <div class="row">    
+             <div class="input-field col s12">
+                <i class="material-icons prefix">subject</i>
+                <textarea name="cost_used" id="cost_used" class="materialize-textarea"></textarea>
+                <label for="icon_prefix">cost used from</label>
+            </div>
+        </div>    
+        <div class="row">    
+             <div class="input-field col s12">
+                <i class="material-icons prefix">subject</i>
+                <textarea name="description" id="description" class="materialize-textarea"></textarea>
+                <label for="icon_prefix">description</label>
+            </div>
+        </div>    
+        
+        <!--Save Fact Button-->
+        <div class="row">
+            <button class="btn waves-effect waves-light #1de9b6 teal accent-3" type="submit" name="action">Add Fact
                   <i class="material-icons right">playlist_add</i>
             </button>
         </div>

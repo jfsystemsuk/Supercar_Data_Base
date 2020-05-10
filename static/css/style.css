@@ -1,7 +1,9 @@
+/* body colour*/
 body {
-    background-color: white;
+    background-color: whitesmoke;
 }
 
+/* button sizings*/
 .btn_small {
     height: 24px;
     width: 60px;
@@ -10,6 +12,3 @@ body {
     padding: 0 0.5em;
 }
 
-.task_header {
-    margin-top: 5px;
-}
