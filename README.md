@@ -28,26 +28,6 @@ So the feedback was taken onboard and changes were made.
 <li>The colour scheme has now been changed.</li>
 </ol>
 
-
-<h2>WIREFRAMES.</h2>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <h2>FEATURES.</h2>
 
 <p>
@@ -179,16 +159,10 @@ however 'add additional Supercars' ,'edit Supercars' and also 'edit facts' about
 
 <h2>Deployment.</h2>
 
-<p><strong>Deployment</strong> is carried out through <strong>GitHub pages</strong></p>
-<p>You can view the deployed webpage by clicking the link below:</p>
-
-<a href="https://jfsystemsuk.github.io/supercar-memory-game/">Supercar Match Game</a></br>
-</br>
-<p>If the link does not work correctly then try "https://jfsystemsuk.github.io/supercar-memory-game/"</p>
-</br>
+<p><strong>Deployment</strong> is carried out through <strong>Heroku app</strong></p>
 
 
-<p>I hope I have covered everything, so please enjoy the game.</p><br>
+<p>I hope I have covered everything, so please enjoy the database, please add info if you think my info is incorrect.</p><br>
 
 <p>Please give feedback on jfsystemsuk@yahoo.co.uk</p><br>
 
