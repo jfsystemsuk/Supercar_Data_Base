@@ -92,8 +92,8 @@ however 'add additional Supercars' ,'edit Supercars' and also 'edit facts' about
 
 <h2>COOKIE POLICY.</h2>
 
-<p>JavaScript cookie code with references to wikipedia has been written in the footer of the main page and allows users to enhance their experience by clicking the 'X' button.<br>
-<p>But this would only be effective if the game was going to be deployed as a finished game and not a Student project.</p><br>
+<p>JavaScript cookie code with references to wikipedia has been written in in previous projetcs in the footer of the main page and allows users to enhance their experience by clicking the 'X' button.<br>
+<p>But this would only be effective if the database was going to be deployed as a finished database and not a Student project.</p><br>
 
 <h2>TECHNOLOGIES USED.</h2>
 
@@ -160,10 +160,9 @@ however 'add additional Supercars' ,'edit Supercars' and also 'edit facts' about
 <h2>ACKNOWLEDGEMENTS GO TO.</h2>
 
 <ul>
-<li><a href="#"></a></a></li>
-<li><a href="#"></a></a></li>
-<li><a href="#"></a></li>
-<li><a href="https://www.traversymedia.com/">Traversy Media</a></li>
+<li><a href="https://www.autotrader.co.uk">Autotrader with help of current supercar prices and data</a></li>
+<li><a href="https://www.pistonheads.com">Pistonheads with help of current supercar prices and data</a></li>
+<li><a href="https://www.traversymedia.com">Traversy Media with help in Mark down writing</a></li>
 </ul><br>
 
 <p></p>
